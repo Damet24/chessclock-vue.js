@@ -156,10 +156,15 @@ export default {
 }
 .keypad {
   height: 20%;
+  width: 100%;
   display: flex;
   gap: 1em;
   justify-content: center;
   align-items: center;
+}
+.keypad button {
+    height: 80%;
+    width: 30%;
 }
 .invert {
   transform: scale(-1, -1);
