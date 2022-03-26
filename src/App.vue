@@ -101,9 +101,13 @@ export default {
     checkTime() {
       if (this.t1 <= 0 || this.t2 <= 0) {
         clearInterval(this.timer);
-        this.t1active = true;
-        this.t2active = true;
-        this.timer = null;
+        this.timer = null
+        this.state = "stop"
+        this.index = "0"
+        this.t1 = this.time
+        this.t2 = this.time
+        this.t1active = true
+        this.t2active = true
         return true;
       } else return false;
     },
